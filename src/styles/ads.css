@@ -1,0 +1,66 @@
+#addblock {
+  margin-top: 60px;
+  width: 98.8vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+/* @keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+} */
+
+.addimage {
+  width: 100%;
+  height: 100%;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0));
+  /* animation: slideIn 2s ease-in-out;
+  transition: 100ms; */
+}
+.slideadd {
+  width: 70px;
+  height: 150px;
+  position: absolute;
+  color: black;
+  z-index: 5;
+}
+.slideadd:hover {
+  cursor: pointer;
+}
+#slideaddleft {
+  top: 150px;
+  left: 2%;
+}
+#slideaddright {
+  top: 150px;
+  right: 2%;
+}
+@media screen and (max-width: 1100px) {
+  #addblock {
+    width: 98vw;
+    margin: 0px;
+    overflow: hidden;
+    margin: 0px;
+  }
+  .slideadd {
+    width: 50px;
+    height: 70px;
+  }
+  #slideaddleft {
+    left: 1%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #addblock {
+    width: 95vw;
+    margin: 0px;
+    overflow: hidden;
+    margin: 0px;
+  }
+}

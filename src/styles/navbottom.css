@@ -1,0 +1,39 @@
+#navbottom {
+  width: 98.8vw;
+  height: 40px;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: black;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 20;
+}
+.navitems {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.navitems:hover {
+  cursor: pointer;
+}
+.navitemlogo {
+  width: 30px;
+  height: 30px;
+}
+.navitems > h3 {
+  font-size: 13px;
+}
+@media screen and (max-width: 500px) {
+  #navbottom {
+    display: flex;
+  }
+}
